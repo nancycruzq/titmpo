@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #527a7a;/* fondo encabezado*/
+    height: 100px;
+    width: 100%;
+    position: fixed;/*99999999999999999*/
+}
+.enlace{
+    position: absolute;
+    padding: 20px 70px;
+}
+.logo{
+    font-weight: 500;
+    margin: 4px;
+    width:130%;
+    height: 75px; /*tam de logo*/
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:  whitesmoke;/*color de la letra*/
+    font-size: 20px;
+    font-family: germain ;
+    padding:8px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #808080;/*color de transition*/
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 50px;
+    color: ghostwhite;/*color de menu*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.main{
+    padding-top: 6rem;
+}
+
+footer{
+    
+    background: #5c8a8a;
+    padding: 3.5rem 0;
+    text-align: center;
+    margin-top: 6rem;
+    align-items: center;
+}
+
+footer p a{
+    color: #e0ebeb;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f1f1f1E6;/*fondo deslis de de menu*/
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: #000000;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: whitesmoke;/*color de menu*/
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    /*+----*/
+
+    footer{
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1%;
+    align-items: center;
+    
+    }
+}

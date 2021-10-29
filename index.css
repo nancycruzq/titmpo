@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    
+    background-color: #e6ffff;
+}
+
+/*----*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+
+.fondo {
+    position: relative;
+    justify-content: center;
+    min-height: 90vh;
+    color: #141f1f; /****/
+    text-align: center;
+}
+
+.fondo .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: white;
+    z-index: -2;
+}
+
+.fondo .background-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+    opacity: 0.32;
+}
+.fondo h1{
+    font: bold 60px oblique;, Sans-serif; 
+    margin: 20px;
+    padding: 30px;
+}
+.fondo h3 {
+    font: normal 28px 'Open Sans', Sans-serif;
+    margin-bottom: 60px;
+    padding: 30px;
+    color: #000000;
+}
+
+a.btn {
+    color: white;
+    border-radius: 10px;
+    background-color: #595959;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 60px;
+}
+
+
+/*imagenes*/
+hr {
+    width: 100%;
+    height: 8px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,cdcdcd+24,000000+50,cdcdcd+79,ffffff+100;Blue+Pipe+%231 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(205,205,205,1) 24%, rgba(0,0,0,1) 50%, rgba(205,205,205,1) 79%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    border: 0;
+}
+
+section h3 {
+    color: #1a1a1a;
+    text-transform: capitalize;
+    font: bold 32px germain;
+    margin-bottom: 35px;
+    text-align: center;
+}
+section p {
+    color:  #145252;
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+
+/********/
+
+hr {
+    width: 60%;
+    height: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,cdcdcd+24,000000+50,cdcdcd+79,ffffff+100;Blue+Pipe+%231 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(205,205,205,1) 24%, rgba(0,0,0,1) 50%, rgba(205,205,205,1) 79%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    border: 0;
+}
+
+
+
+@media (max-width: 858px) {
+    section.fondo h3 {
+        font: bold 15px 'Open Sans', Sans-serif;
+    }
+    section {
+        padding: 40px 20px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+ul.grid {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.muestra {
+    background-color: #e6ffff;
+}
+.muestra .grid li {
+    padding: 20px;
+    background-clip: content-box;
+    height: 350px;
+    background-position: center;
+    background-color: white;
+    background-size: cover;
+}
+
+.muestra .grid li.small {
+    flex-basis: 40%;
+}
+.muestra .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 858px) {
+    .muestra .grid li.small, .bandas .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
